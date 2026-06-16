@@ -1,0 +1,391 @@
+/* ── ROOT ── */
+.login-root {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ── LEFT HERO ── */
+.login-hero {
+  width: 50%;
+  background: linear-gradient(145deg, #0f172a 0%, #1e3a8a 55%, #1d4ed8 100%);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Decorative blobs */
+.hero-blob {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero-blob-1 {
+  width: 520px;
+  height: 520px;
+  top: -160px;
+  left: -160px;
+  background: radial-gradient(circle, rgba(37,99,235,0.35) 0%, transparent 70%);
+}
+
+.hero-blob-2 {
+  width: 400px;
+  height: 400px;
+  bottom: -120px;
+  right: -120px;
+  background: radial-gradient(circle, rgba(99,102,241,0.3) 0%, transparent 70%);
+}
+
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.04;
+  background-image:
+    linear-gradient(#fff 1px, transparent 1px),
+    linear-gradient(90deg, #fff 1px, transparent 1px);
+  background-size: 44px 44px;
+  pointer-events: none;
+}
+
+/* Hero content */
+.hero-content {
+  position: relative;
+  z-index: 10;
+  padding: 60px 56px;
+  max-width: 520px;
+  width: 100%;
+}
+
+/* Brand */
+.hero-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 56px;
+}
+
+.hero-brand-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: 18px;
+  box-shadow: 0 4px 16px rgba(37,99,235,0.45);
+  flex-shrink: 0;
+}
+
+.hero-brand-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.hero-brand-sub {
+  font-size: 11px;
+  color: #60a5fa;
+  font-weight: 500;
+  margin-top: 1px;
+}
+
+/* Heading */
+.hero-heading {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px;
+}
+
+.hero-heading-accent {
+  background: linear-gradient(90deg, #60a5fa, #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Subheading */
+.hero-sub {
+  font-size: 15px;
+  color: #94a3b8;
+  line-height: 1.7;
+  max-width: 380px;
+}
+
+/* ── RIGHT PANEL ── */
+.login-panel {
+  width: 50%;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 32px;
+  position: relative;
+}
+
+/* Mobile brand (hidden on desktop) */
+.mobile-brand {
+  display: none;
+  position: absolute;
+  top: 24px;
+  left: 28px;
+  align-items: center;
+  gap: 8px;
+}
+
+.mobile-brand-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* ── LOGIN CARD ── */
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: 20px;
+  padding: 40px 36px;
+  box-shadow:
+    0 4px 6px rgba(0,0,0,0.04),
+    0 20px 50px rgba(0,0,0,0.08);
+}
+
+/* Card header */
+.lc-header {
+  margin-bottom: 28px;
+}
+
+.lc-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+.lc-sub {
+  font-size: 13.5px;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+/* Error */
+.lc-error {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  color: #be123c;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 12px 14px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.lc-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Field */
+.lc-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.lc-label {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.lc-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lc-forgot {
+  font-size: 12px;
+  color: #2563eb;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+  transition: color 0.15s;
+}
+
+.lc-forgot:hover { color: #1d4ed8; text-decoration: underline; }
+
+/* Input wrap */
+.lc-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.lc-icon {
+  position: absolute;
+  left: 13px;
+  font-size: 17px;
+  color: #94a3b8;
+  pointer-events: none;
+  transition: color 0.15s;
+}
+
+.lc-input-wrap:focus-within .lc-icon { color: #2563eb; }
+
+.lc-input {
+  width: 100%;
+  padding: 12px 14px 12px 40px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  background: #f8fafc;
+  color: #0f172a;
+  transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+}
+
+.lc-input::placeholder { color: #94a3b8; }
+
+.lc-input:focus {
+  border-color: #2563eb;
+  background: #fff;
+  box-shadow: 0 0 0 3.5px rgba(37,99,235,0.1);
+}
+
+.lc-input-pwd { padding-right: 42px; }
+
+.lc-eye {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #94a3b8;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  transition: color 0.15s;
+}
+
+.lc-eye:hover { color: #64748b; }
+
+/* Remember me */
+.lc-remember {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.lc-checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: #2563eb;
+  cursor: pointer;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.lc-remember-text {
+  font-size: 13.5px;
+  color: #64748b;
+}
+
+/* Submit button */
+.lc-submit {
+  width: 100%;
+  padding: 13.5px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.18s, transform 0.15s, box-shadow 0.18s;
+  box-shadow: 0 4px 14px rgba(37,99,235,0.3);
+  margin-top: 2px;
+}
+
+.lc-submit:hover:not(:disabled) {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(37,99,235,0.35);
+}
+
+.lc-submit:active:not(:disabled) { transform: translateY(0); }
+.lc-submit:disabled { opacity: 0.55; cursor: not-allowed; }
+
+/* Spinner */
+.lc-spinner {
+  width: 20px;
+  height: 20px;
+  border: 2.5px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .login-hero    { width: 45%; }
+  .login-panel   { width: 55%; }
+  .hero-heading  { font-size: 2.2rem; }
+  .hero-content  { padding: 40px 36px; }
+}
+
+@media (max-width: 768px) {
+  .login-root    { flex-direction: column; }
+  .login-hero    { display: none; }
+  .login-panel   { width: 100%; min-height: 100vh; padding: 40px 20px; }
+  .mobile-brand  { display: flex; }
+  .login-card    { padding: 32px 24px; }
+}
+
+/* ── KILL BROWSER AUTOFILL STYLES ── */
+.lc-input:-webkit-autofill,
+.lc-input:-webkit-autofill:hover,
+.lc-input:-webkit-autofill:focus,
+.lc-input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 100px #f8fafc inset !important;
+  -webkit-text-fill-color: #0f172a !important;
+  caret-color: #0f172a;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+@keyframes onAutoFillStart { from {} to {} }
+.lc-input { animation-name: onAutoFillStart; }
