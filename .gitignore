@@ -216,3 +216,26 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Python
+venv/
+__pycache__/
+*.pyc
+db.sqlite3
+
+# React
+node_modules/
+dist/
+
+# Environment files
+.env
+.env.local
+
+# VS Code
+.vscode/
+
+# IDE
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
