@@ -134,9 +134,6 @@ npm run dev
 ### Attendance
 ![Attendance](screenshots/attendance.png)
 
-### Timesheets
-![Timesheets](screenshots/timesheet.png)
-
 ## Future Enhancements
 
 * QR Code Attendance
