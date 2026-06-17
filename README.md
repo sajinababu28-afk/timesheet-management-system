@@ -123,6 +123,19 @@ npm install
 
 npm run dev
 ```
+## Screenshots
+
+### Login Page
+![Login](screenshots/login.png)
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Attendance
+![Attendance](screenshots/attendance.png)
+
+### Timesheets
+![Timesheets](screenshots/timesheet.png)
 
 ## Future Enhancements
 
